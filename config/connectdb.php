@@ -3,9 +3,9 @@ class Database{
  
     // specify your own database credentials
     private $host = "localhost";
-    private $db_name = "old_product_db";
+    private $db_name = "old_product_service";
     private $username = "root";
-    private $password = "12345";
+    private $password = "";
     public $conn;
  
     // get the database connection

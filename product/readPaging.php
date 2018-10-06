@@ -59,10 +59,10 @@ if($num>0){
     }
  
  
-    // include paging
+    // include paging     
     $total_rows=$product->count();
-    $page_url="{$home_url}product/read_paging.php?";
-    $paging=$utilities->getPaging($page, $total_rows, $records_per_page, $page_url);
+    $page_url="{$home_url}product/readPaging.php?";
+    $paging=$utilities->getPaging($page, $total_rows, $records_per_page,$page_url);
     $products_arr["paging"]=$paging;
  
     echo json_encode($products_arr);
